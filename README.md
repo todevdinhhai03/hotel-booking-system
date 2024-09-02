@@ -1,1 +1,1 @@
-# hotel-booking-system
+# Fullstack web project (monolithic)
