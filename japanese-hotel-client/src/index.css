@@ -91,14 +91,11 @@ body {
 
 
 
-
-
 .header {
   position: relative;
   padding: 60px;
-  /* height: 100px; */
   background-size: cover;
-  background-image: url("./assets/hotel-photos/header-bg.jpg");
+  background-image: url("./assets/ui_images/header-bg.jpg");
   background-position: center center;
 }
 
@@ -113,7 +110,7 @@ body {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   opacity: 0.9;
-  background-image: url("./assets/hotel-photos/parallax.jpg");
+  background-image: url("./assets/ui_images/parallax.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -213,7 +210,7 @@ h2 {
 
 /* The header banner */
 .header-banner {
-  background-image: url("./assets/hotel-photos/header-banner.jpg");
+  background-image: url("./assets/ui_images/header-banner.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
