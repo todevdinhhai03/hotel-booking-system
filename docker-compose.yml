@@ -6,7 +6,7 @@ services:
       context: ./japanese-hotel-client
       dockerfile: Dockerfile
     ports:
-      - 3000:3000
+      - "5173":"5173"
     networks:
       - app-networks
 
@@ -15,7 +15,7 @@ services:
       context: ./japanese-hotel-server
       dockerfile: Dockerfile
     ports:
-      - "9191:8080"
+      - "9191:9191"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/japanese_hotel_db
       - SPRING_DATASOURCE_USERNAME=root
