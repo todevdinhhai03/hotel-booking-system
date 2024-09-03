@@ -1,4 +1,7 @@
 # Fullstack web project (monolithic)
+This project is a full-stack web application project
+and it was created with Java and React.
+
 ## Technologies Of Project
 <h5> Backend Techologies</h5>
 <ul>
