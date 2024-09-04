@@ -13,6 +13,7 @@ and it was created with Java and React.
     <li>MySQL</li>
     <li>Jwt</li>
     <li>Lombok</li>
+    <li>Docker</li>
 </ul>
 <h5> Frontend Techologies</h5>
 <ul>
@@ -22,3 +23,13 @@ and it was created with Java and React.
 </ul>
 
 ## How can I use the Project ?
+Download the source code of project. Open this project with your favorite IDE. Make sure Docker is installed on your computer. And, follow these steps:
+
+<h3> Run docker-compose.yml file</h3>
+<p>
+ Open the command prompt in the project directory and type the following command to run the containers:
+
+    docker compose up -d
+
+After that, access <b> localhost:3000 </b>.
+
