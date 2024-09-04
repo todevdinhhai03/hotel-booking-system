@@ -108,7 +108,7 @@ const RoomManager = () => {
                                 <tr className="text-center">
                                     <th>ID</th>
                                     <th>タイプ</th>
-                                    <th>価格</th>
+                                    <th>価格(¥)</th>
                                     <th>アクション</th>
                                 </tr>
                             </thead>
