@@ -1,6 +1,17 @@
 version: '3.8'
 
 services:
+
+  frontend:
+    build:
+      context: ./japanese-hotel-client
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    networks:
+      - app-networks
+
+
   backend:
     image: japanese-hotel-server
     container_name: springboot-server-container
@@ -8,7 +19,7 @@ services:
       context: ./japanese-hotel-server
       dockerfile: Dockerfile
     ports:
-      - "9191:8080"
+      - "9191:9191"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3306/japanese_hotel_db?createDatabaseIfNotExist=true
       - SPRING_DATASOURCE_USERNAME=user
@@ -39,4 +50,5 @@ volumes:
 networks:
   app-networks:
     driver: bridge
+
 
