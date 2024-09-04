@@ -1,35 +1,33 @@
 version: '3.8'
 
 services:
-  frontend:
-    build:
-      context: ./japanese-hotel-client
-      dockerfile: Dockerfile
-    ports:
-      - 3000:3000
-    networks:
-      - app-networks
-
   backend:
+    image: japanese-hotel-server
+    container_name: springboot-server-container
     build:
       context: ./japanese-hotel-server
       dockerfile: Dockerfile
     ports:
       - "9191:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/japanese_hotel_db
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3306/japanese_hotel_db?createDatabaseIfNotExist=true
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=userpass
     networks:
       - app-networks
     depends_on:
       - db
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
+    container_name: mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: japanese_hotel_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpass
+    ports:
+      - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
     networks:
@@ -41,3 +39,4 @@ volumes:
 networks:
   app-networks:
     driver: bridge
+
