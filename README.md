@@ -31,7 +31,7 @@ Download the source code of project. Open this project with your favorite IDE. M
 
     docker compose up -d
 
-After that, access <b> localhost:3000 </b>.
+After that, access <b> localhost:5173 </b>.
 
 
 ## Project UI
