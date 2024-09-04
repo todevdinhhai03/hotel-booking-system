@@ -20,8 +20,8 @@ const RoomCard = ({ room }) => {
                         </div>
                         <div className="flex-grow-1 ml-3 px-5">
                             <Card.Title className="hotel-color">{room.roomType}</Card.Title>
-                            <Card.Title className="room-price">{room.roomPrice}万/日</Card.Title>
-                            <Card.Text>&#x1F381;チェックイン時に10,000円プレゼント</Card.Text>
+                            <Card.Title className="room-price">{room.roomPrice}¥/日</Card.Title>
+                            <Card.Text>&#x1F381;チェックイン時に10,000¥プレゼント</Card.Text>
 
                         </div>
                         <div className="flex-shrink-0 mt-3 ">
