@@ -1,6 +1,5 @@
-# Fullstack web project (monolithic)
-This project is a full-stack web application project
-and it was created with Java and React.
+# Fullstack web project (Monolithic)
+This project builds a booking management web application. It is created using Java and ReactJS.
 
 ## Technologies Of Project
 <h5> Backend Techologies</h5>
@@ -18,7 +17,7 @@ and it was created with Java and React.
 <h5> Frontend Techologies</h5>
 <ul>
     <li>JavaScript</li>
-    <li>React</li>
+    <li>ReactJS</li>
     <li>Bootstrap</li>
 </ul>
 
