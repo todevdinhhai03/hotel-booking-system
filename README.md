@@ -1,4 +1,4 @@
-# Fullstack web project (Monolithic)
+# Fullstack web application (Monolithic)
 This project builds a booking management web application. It is created using Java and ReactJS.
 
 ## Technologies Of Project
